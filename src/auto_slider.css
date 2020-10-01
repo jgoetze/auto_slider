@@ -1,0 +1,22 @@
+.auto-slider-item-wrapper {
+  white-space: nowrap;
+  overflow: hidden;
+  display: block !important;
+
+> * {
+  display: inline-block !important;
+  width: calc(100% / var(--slide-items)) !important;
+}
+
+> *:not(:first-child) {
+  margin: 0 !important;
+}
+
+> *:first-child {
+  transition: margin-left 1s;
+  margin-top: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 0 !important;
+  margin-left: 0;
+}
+}
